@@ -1,0 +1,15 @@
+.footer { background: linear-gradient(135deg, #0a0a2e, #1a1a1a); color: #fff; padding: 40px 24px; border-top: 3px solid #d4af37; }
+.footer-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+.footer-inner p { font-size: 15px; line-height: 1.8; margin-bottom: 20px; color: #a0a8c0; }
+.footer-contact { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; font-size: 15px; }
+.footer-contact span { display: flex; align-items: center; gap: 8px; color: #e8d5a3; }
+.footer-contact img { width: 20px; height: 20px; }
+.sep { color: #d4af37; }
+.footer-inner a { color: #d4af37; text-decoration: none; font-size: 15px; }
+.footer-inner a:hover { color: #f0c93a; text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .footer-contact { flex-direction: column; gap: 8px; }
+  .sep { display: none; }
+  .footer-inner p { font-size: 13px; }
+}

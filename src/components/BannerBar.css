@@ -1,0 +1,3 @@
+.banner-bar { background: linear-gradient(90deg, #0a0a2e, #1a1a5e, #0a0a2e); padding: 20px 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; border-top: 2px solid #d4af37; border-bottom: 2px solid #d4af37; }
+.banner-bar span { color: #d4af37; font-size: 16px; font-weight: 600; letter-spacing: 1px; cursor: pointer; transition: color 0.2s, transform 0.2s; }
+.banner-bar span:hover { color: #fff8dc; transform: scale(1.08); }
