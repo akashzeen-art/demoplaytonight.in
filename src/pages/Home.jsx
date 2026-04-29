@@ -1,4 +1,5 @@
 import Hero from '../components/Hero'
+import Navbar from '../components/Navbar'
 import Stats from '../components/Stats'
 import Intro from '../components/Intro'
 import BannerBar from '../components/BannerBar'
@@ -14,6 +15,7 @@ import Footer from '../components/Footer'
 export default function Home({ showPage }) {
   return (
     <>
+      <Navbar showPage={showPage} />
       <Hero showPage={showPage} />
       <Stats />
       <Intro />

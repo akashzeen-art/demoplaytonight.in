@@ -1,0 +1,32 @@
+.about-body { max-width: 1000px; margin: 0 auto; padding: 48px 24px 60px; }
+
+.about-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 48px; }
+.about-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: #0a0a2e; letter-spacing: 2px; margin-bottom: 16px; }
+.about-text p { font-size: 16px; color: #3a3a3a; line-height: 1.8; margin-bottom: 14px; }
+.about-tagline { font-weight: 700; color: #d4af37; font-size: 17px; border-left: 4px solid #d4af37; padding-left: 14px; margin-top: 20px; }
+.about-image-wrap { display: flex; justify-content: center; }
+.about-product-img { max-width: 320px; width: 100%; filter: drop-shadow(0 8px 32px rgba(212,175,55,0.25)); }
+
+.about-product-section { background: #fff; border-radius: 14px; padding: 36px 32px; margin-bottom: 36px; box-shadow: 0 2px 16px rgba(212,175,55,0.1); border-top: 3px solid #d4af37; text-align: center; }
+.about-product-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: #0a0a2e; letter-spacing: 2px; margin-bottom: 12px; }
+.about-product-desc { font-size: 16px; color: #5a5a5a; line-height: 1.8; max-width: 640px; margin: 0 auto 28px; }
+
+.about-benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.about-benefit-card { background: linear-gradient(135deg, #0a0a2e, #1a1a5e); border-radius: 10px; padding: 18px 12px; color: #d4af37; font-weight: 700; font-size: 15px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.about-benefit-icon { font-size: 20px; }
+
+.about-ingredients-section { background: #fff; border-radius: 14px; padding: 36px 32px; box-shadow: 0 2px 16px rgba(212,175,55,0.1); border-top: 3px solid #d4af37; text-align: center; }
+.about-ingredients-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: #0a0a2e; letter-spacing: 2px; margin-bottom: 28px; }
+.about-ingredients-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.about-ingredient-card { display: flex; flex-direction: column; align-items: center; gap: 12px; background: #fdf8f0; border: 1px solid #e8d5a3; border-radius: 12px; padding: 20px 12px; }
+.about-ingredient-card img { width: 64px; height: 64px; object-fit: contain; }
+.about-ingredient-card span { font-size: 14px; font-weight: 600; color: #0a0a2e; text-align: center; }
+
+@media (max-width: 768px) {
+  .about-intro-grid { grid-template-columns: 1fr; gap: 28px; }
+  .about-benefits-grid, .about-ingredients-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-product-section, .about-ingredients-section { padding: 24px 18px; }
+}
+@media (max-width: 480px) {
+  .about-benefits-grid, .about-ingredients-grid { grid-template-columns: 1fr 1fr; }
+}

@@ -1,9 +1,11 @@
 import './Policy.css'
+import Navbar from '../components/Navbar'
 
 export default function Terms({ showPage }) {
   const nav = (p) => (e) => { e.preventDefault(); showPage(p) }
   return (
     <div>
+      <Navbar showPage={showPage} />
       <div className="policy-header">
         <button className="policy-back" onClick={nav('home')}>← Back</button>
         <h1>Terms &amp; Conditions</h1>
@@ -27,7 +29,7 @@ export default function Terms({ showPage }) {
       </div>
       <div className="policy-footer">
         <p>© 2026, Zeen Mediconnect OPC Pvt Ltd. All Rights Reserved.</p>
-        <p style={{marginTop:'8px'}}><a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp; <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onClick={nav('refund')}>Refund &amp; Cancellation Policy</a></p>
+        <p style={{marginTop:'8px'}}><a href="#" onClick={nav('about')}>About Us</a> &nbsp;|&nbsp; <a href="#" onClick={nav('contact')}>Contact Us</a> &nbsp;|&nbsp; <a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp; <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onClick={nav('refund')}>Refund &amp; Cancellation Policy</a></p>
       </div>
     </div>
   )

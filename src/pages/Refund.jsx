@@ -1,9 +1,11 @@
 import './Policy.css'
+import Navbar from '../components/Navbar'
 
 export default function Refund({ showPage }) {
   const nav = (p) => (e) => { e.preventDefault(); showPage(p) }
   return (
     <div>
+      <Navbar showPage={showPage} />
       <div className="policy-header">
         <button className="policy-back" onClick={nav('home')}>← Back</button>
         <h1>Refund &amp; Cancellation Policy</h1>
@@ -13,7 +15,7 @@ export default function Refund({ showPage }) {
         <div className="policy-intro">
           This Refund &amp; Cancellation Policy applies to all purchases made through <a href="https://playtonight.in/">https://playtonight.in/</a>, managed by <strong>Zeen Mediconnect OPC Pvt. Ltd.</strong> Please read it carefully before placing an order.
         </div>
-        <div className="policy-section"><h2>Order Cancellation</h2><ul><li>Orders can be cancelled within <strong>24 hours</strong> of placing the order, provided the order has not been processed or shipped.</li><li>Contact us at <a href="mailto:enquiry@zeenmediconnect.com">enquiry@zeenmediconnect.com</a> / <strong>+91 92175 28957</strong> with your order details.</li><li>Once an order is shipped, it <strong>cannot be cancelled</strong>.</li></ul></div>
+        <div className="policy-section"><h2>Order Cancellation</h2><ul><li>Orders can be cancelled within <strong>24 hours</strong> of placing the order, provided the order has not been processed or shipped.</li><li>Contact us at <a href="mailto:bd@zeenmediconnect.com">bd@zeenmediconnect.com</a> / <strong>+91 92175 28957</strong> with your order details.</li><li>Once an order is shipped, it <strong>cannot be cancelled</strong>.</li></ul></div>
         <div className="policy-section">
           <h2>Refund Eligibility</h2>
           <p>Refunds are applicable only under the following conditions:</p>
@@ -28,7 +30,7 @@ export default function Refund({ showPage }) {
           <div className="contact-grid">
             <div className="contact-item">
               <h4>Email</h4>
-              <a href="mailto:enquiry@zeenmediconnect.com">enquiry@zeenmediconnect.com</a>
+              <a href="mailto:bd@zeenmediconnect.com">bd@zeenmediconnect.com</a>
             </div>
             <div className="contact-item">
               <h4>Phone</h4>
@@ -43,7 +45,7 @@ export default function Refund({ showPage }) {
       </div>
       <div className="policy-footer">
         <p>© 2026, Zeen Mediconnect OPC Pvt Ltd. All Rights Reserved.</p>
-        <p style={{marginTop:'8px'}}><a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp; <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onClick={nav('refund')}>Refund &amp; Cancellation Policy</a></p>
+        <p style={{marginTop:'8px'}}><a href="#" onClick={nav('about')}>About Us</a> &nbsp;|&nbsp; <a href="#" onClick={nav('contact')}>Contact Us</a> &nbsp;|&nbsp; <a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp; <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onClick={nav('refund')}>Refund &amp; Cancellation Policy</a></p>
       </div>
     </div>
   )

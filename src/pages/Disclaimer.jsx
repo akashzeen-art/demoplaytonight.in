@@ -1,9 +1,11 @@
 import './Policy.css'
+import Navbar from '../components/Navbar'
 
 export default function Disclaimer({ showPage }) {
   const nav = (p) => (e) => { e.preventDefault(); showPage(p) }
   return (
     <div>
+      <Navbar showPage={showPage} />
       <div className="policy-header">
         <button className="policy-back" onClick={nav('home')}>← Back</button>
         <h1>Disclaimer</h1>
@@ -26,7 +28,7 @@ export default function Disclaimer({ showPage }) {
           <div className="contact-grid">
             <div className="contact-item">
               <h4>Email</h4>
-              <a href="mailto:enquiry@zeenmediconnect.com">enquiry@zeenmediconnect.com</a>
+              <a href="mailto:bd@zeenmediconnect.com">bd@zeenmediconnect.com</a>
             </div>
             <div className="contact-item">
               <h4>Phone</h4>
@@ -41,7 +43,10 @@ export default function Disclaimer({ showPage }) {
       </div>
       <div className="policy-footer">
         <p>© 2026, Zeen Mediconnect OPC Pvt Ltd. All Rights Reserved.</p>
-        <p style={{marginTop:'8px'}}><a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp; <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onClick={nav('refund')}>Refund &amp; Cancellation Policy</a></p>
+        <p style={{marginTop:'8px'}}>
+          <a href="#" onClick={nav('about')}>About Us</a> &nbsp;|&nbsp;
+          <a href="#" onClick={nav('contact')}>Contact Us</a> &nbsp;|&nbsp;
+          <a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp; <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onClick={nav('refund')}>Refund &amp; Cancellation Policy</a></p>
       </div>
     </div>
   )

@@ -1,9 +1,11 @@
 import './Policy.css'
+import Navbar from '../components/Navbar'
 
 export default function Privacy({ showPage }) {
   const nav = (p) => (e) => { e.preventDefault(); showPage(p) }
   return (
     <div>
+      <Navbar showPage={showPage} />
       <div className="policy-header">
         <button className="policy-back" onClick={nav('home')}>← Back</button>
         <h1>Privacy Policy</h1>
@@ -72,7 +74,7 @@ export default function Privacy({ showPage }) {
             <li>Withdraw consent for marketing communications.</li>
             <li>Restrict or object to certain data processing activities.</li>
           </ul>
-          <p style={{marginTop:'12px'}}>To exercise these rights, contact us at <a href="mailto:enquiry@zeenmediconnect.com">enquiry@zeenmediconnect.com</a>.</p>
+          <p style={{marginTop:'12px'}}>To exercise these rights, contact us at <a href="mailto:bd@zeenmediconnect.com">bd@zeenmediconnect.com</a>.</p>
         </div>
 
         <div className="policy-section">
@@ -95,7 +97,7 @@ export default function Privacy({ showPage }) {
           <div className="contact-grid">
             <div className="contact-item">
               <h4>Email</h4>
-              <a href="mailto:enquiry@zeenmediconnect.com">enquiry@zeenmediconnect.com</a>
+              <a href="mailto:bd@zeenmediconnect.com">bd@zeenmediconnect.com</a>
             </div>
             <div className="contact-item">
               <h4>Phone</h4>
@@ -112,6 +114,8 @@ export default function Privacy({ showPage }) {
       <div className="policy-footer">
         <p>Zeen Mediconnect OPC Pvt Ltd. All Rights Reserved © 2026.</p>
         <p style={{marginTop:'8px'}}>
+          <a href="#" onClick={nav('about')}>About Us</a> &nbsp;|&nbsp;
+          <a href="#" onClick={nav('contact')}>Contact Us</a> &nbsp;|&nbsp;
           <a href="#" onClick={nav('disclaimer')}>Disclaimer</a> &nbsp;|&nbsp;
           <a href="#" onClick={nav('terms')}>Terms &amp; Conditions</a> &nbsp;|&nbsp;
           <a href="#" onClick={nav('privacy')}>Privacy Policy</a> &nbsp;|&nbsp;
