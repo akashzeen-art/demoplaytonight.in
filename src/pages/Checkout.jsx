@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Checkout.css'
 
-const UNIT_PRICE = 799
+const UNIT_PRICE = 999
 
 export default function Checkout({ showPage }) {
   const [qty, setQty] = useState(1)
