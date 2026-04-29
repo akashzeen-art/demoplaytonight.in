@@ -7,7 +7,7 @@ export default function Footer({ showPage }) {
         <div className="footer-contact">
           <span><img src="/img/call2.png" alt="" />Customer Care: +91 92175 28957</span>
           <span className="sep">|</span>
-          <span><img src="/img/email.png" alt="" />bd@zeenmediconnect.com</span>
+          <span><img src="/img/email.png" alt="" /><a href="mailto:bd@zeenmediconnect.com">bd@zeenmediconnect.com</a></span>
         </div>
         <p>
           <a href="#" onClick={() => showPage('about')}>About Us</a> |{' '}

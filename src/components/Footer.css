@@ -4,6 +4,8 @@
 .footer-contact { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; font-size: 15px; }
 .footer-contact span { display: flex; align-items: center; gap: 8px; color: #e8d5a3; }
 .footer-contact img { width: 20px; height: 20px; }
+.footer-contact a { color: #e8d5a3; text-decoration: underline; cursor: pointer; }
+.footer-contact a:hover { color: #d4af37; }
 .sep { color: #d4af37; }
 .footer-inner a { color: #d4af37; text-decoration: none; font-size: 15px; }
 .footer-inner a:hover { color: #f0c93a; text-decoration: underline; }
